@@ -35,6 +35,7 @@ main {
 
 #img {
     width: 400px;
+    margin: auto;
     content: url('joshua-j-cotten-IWKIHuzl-tU-unsplash.jpg');
     border-radius: 2.5%;
 }
