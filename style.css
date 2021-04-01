@@ -12,87 +12,74 @@ body {
 
     font-family: 'Rubik', sans-serif;
 }
- /* content flex wrapper */
-.wrapper {
-    height: 100%;
-    display: flex;
-}
 
-/* navBar styling */
-#navBar {
-    height: 100%;
-
-    background-color: tomato;
-    display: flex;
-    align-items: center;
-
-    position: relative;
-    transition: all 1s;
-    left: -140px;
-}
-
-#navBar:hover {
-    transition: all 1s;
-    left: 0;
-}
-
-.nav-angle {
-    font-size: 100px;
-}
-
-#nav {
-    position: relative;
-    transition: all 1s;
-    width: 0%;
-    left: -100%;
-}
-
+/* header styling */
 .navigation {
+    display: flex;
+}
+
+.navBox {
+    background-color: cadetblue;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* main styling */
+main {
     text-align: center;
 }
 
-.navBox:hover {
-    background-color: #b34632;
-}
-
-.navBox a {
-    display: inline-block;
-    padding: 10px 20px;
-    width: 100px;
-}
-
-/* content styling */
 .content {
+    padding: 0 25px;
+}
+
+#img {
+    width: 400px;
+    content: url('joshua-j-cotten-IWKIHuzl-tU-unsplash.jpg');
+    border-radius: 2.5%;
+}
+
+/* footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    padding: 0 5rem;
+    padding: 5px;
     text-align: center;
+    background-color: #1f1f1f;
 }
 
 /* general styling */
-h1 {
-    font-size: 4rem;
-}
-
-h2 {
-    font-size: 1rem;
-    font-weight: normal;
-}
-
 a {
-    font-size: 1.3rem;
+    font-size: 2rem;
     text-decoration: none;
     color: #fefefe;
+    display: inline-block;
+    width: 100%;
 }
 
-img {
-    width: 600px;
-    border-radius: 5%;;
+a:hover, a:active, a:focus {
+    background-color: #406b6d;
 }
 
-footer {
-    margin-left: 50%;
-    position: absolute;
-    bottom: 10px;
+/* media queries */
+@media screen and (max-width: 600px) {
+    #navBar {
+        position: fixed;
+        margin-bottom: 29px;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        display: flex;
+    }
+    .navigation {
+        flex-grow: 1;
+    }
+    #img {
+        width: 200px;
+        content: url('raccoon-pngrepo-com.png');
+    }
+    a {
+        font-size: 1.4rem;
+    }
 }
-
-/* keyframe animations */
